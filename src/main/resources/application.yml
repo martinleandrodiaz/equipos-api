@@ -1,0 +1,29 @@
+server:
+    port: ${PORT:8080}
+jwt:
+    secret: ${JWT_SECRET:QEMQYEVMHYNRVMCBVJ07VT5V562223OU7MTA6QTN6F19F6K9VVFOEWGTSTL25JTYZRYEECZI2CRN52N8}
+spring:
+    application:
+        name: ${SERVICE_NAME:equipos-api}
+    datasource:
+        data: classpath:data.sql
+        driverClassName: org.h2.Driver
+        password: ''
+        url: jdbc:h2:mem:testdb;IGNORECASE=TRUE;
+        username: sa
+    h2:
+        console:
+            enabled: true
+            path: /h2-ui
+    jpa:
+        database-platform: org.hibernate.dialect.H2Dialect
+        defer-datasource-initialization: true
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.H2Dialect
+        show-sql: ${SHOW_SQL:true}
+    sql:
+        init:
+            mode: always

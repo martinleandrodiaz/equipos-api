@@ -1,0 +1,17 @@
+/target/
+/.idea/.gitignore
+/.idea/aws.xml
+/.idea/compiler.xml
+/.idea/dataSources.xml
+/.idea/encodings.xml
+/.idea/jarRepositories.xml
+/.idea/jpa-buddy.xml
+/.idea/misc.xml
+/.idea/uiDesigner.xml
+/.idea/vcs.xml
+/.idea/
+/.mvn/
+.vscode
+/mvnw
+/mvnw.cmd
+/HELP.md
